@@ -24,9 +24,9 @@ app.use(cors());
 app.use("/api", router);
 
 
-app.get("*", function(req, res) {
-    res.sendFile(path.join(__dirname, "../frontend/build/index.html"));
-});
+// app.get("*", function(req, res) {
+//     res.sendFile(path.join(__dirname, "../frontend/build/index.html"));
+// });
 
 
 app.listen(APP_PORT, () => console.log("Server running on port " + APP_PORT));
