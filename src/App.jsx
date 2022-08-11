@@ -8,7 +8,7 @@ function App() {
   return (
   <Fragment>
     <Header/>
-    <Container className="mt-5">
+    <Container className="mt-5 main-content">
         <View/>
     </Container>
   </Fragment>
