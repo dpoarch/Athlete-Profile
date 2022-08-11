@@ -7,9 +7,11 @@ dotenv.config();
 
 // Server Port
 const APP_PORT = process.env.APP_PORT || 3000;
+
 // Express Server
 const app = express();
 
+// MongoDB Connection
 mongoose.connect(process.env.MONGO_DB || 'mongodb://localhost:27017/athlete' , function(err) {
     if(err){
         console.log('Database connection failed '+ err);

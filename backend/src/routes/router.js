@@ -1,9 +1,14 @@
 const express = require("express");
 const { validationResult } = require('express-validator');
-const route = express.Router();
-const Athlete = require('../models/Athlete.js');
+
+// Validator Schema
 const validate_create_profile_schema = require('../schema/validateCreateProfile');
 const validate_update_profile_schema = require('../schema/validateUpdateProfile');
+
+// Athlete Model
+const Athlete = require('../models/Athlete.js');
+
+const route = express.Router();
 
 /* Get Athletes Profile */
 route.get('/athletes', async (req, res) => {
