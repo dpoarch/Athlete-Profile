@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.onHover{
+  position: relative;
+  cursor: pointer;
+  transform: scale(1);
+  transition: 0.3s;
+  
+}
+.onHover:hover{
+  z-index: 10;
+  transform: scale(1.06);
+  box-shadow: 0 0 0 30px #222;
+  box-shadow: 0px 4px 9px 0px #3e43526b;
+}
